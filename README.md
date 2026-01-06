@@ -1,82 +1,94 @@
-The Matrix – HTML/CSS Animation Project
-Overview
+https://kyraprak.github.io/the.matrix-1/
 
-The Matrix is a lightweight front-end project that recreates a cinematic “Matrix-style” interface using only HTML and CSS—no JavaScript required. The project consists of two connected pages: a boot/loading screen and an animated “access granted” screen featuring falling green code reminiscent of The Matrix films.
+---
+
+# 🦠 The Matrix – HTML/CSS Animation Project
+
+## Overview
+
+**The Matrix** is a lightweight front-end project that recreates a cinematic “Matrix-style” interface using only **HTML and CSS**—no JavaScript required. The project consists of two connected pages: a boot/loading screen and an animated “access granted” screen featuring falling green code reminiscent of *The Matrix* films.
 
 The goal of this project is to explore CSS animations, layout techniques, and visual effects while keeping the implementation simple and performant.
 
+---
 
-Features:
+## Features
 
-Pure HTML & CSS
+* **Pure HTML & CSS**
 
-No JavaScript or external libraries
+  * No JavaScript or external libraries
+  * Runs entirely in the browser
 
-Runs entirely in the browser
+* **Boot / Loading Screen**
 
-Boot / Loading Screen
+  * Animated progress bar using CSS keyframes
+  * Futuristic terminal-style typography and glow effects
+  * “Enter Matrix” call-to-action
 
-Animated progress bar using CSS keyframes
+* **Matrix Rain Animation**
 
-Futuristic terminal-style typography and glow effects
+  * Vertical streams of binary characters
+  * Individual animation speeds and positions for variation
+  * Glowing green text with depth and motion
+  * Foreground content layered cleanly over the animation
 
-“Enter Matrix” call-to-action
+* **Responsive & Full-Screen**
 
-Matrix Rain Animation
+  * Uses viewport units (`vh`, `vw`)
+  * Scales smoothly across screen sizes
+  * No scrolling or layout shifts
 
-Vertical streams of binary characters
+---
 
-Individual animation speeds and positions for variation
+## Project Structure
 
-Glowing green text with depth and motion
+```
+/index.html       → Boot / loading screen
+/matrix.html      → Matrix rain animation + access message
+```
 
-Foreground content layered cleanly over the animation
+Each page is self-contained, with embedded CSS for simplicity and portability.
 
-Responsive & Full-Screen
+---
 
-Uses viewport units (vh, vw)
+## How It Works
 
-Scales smoothly across screen sizes
+* **CSS Keyframes** drive all animations:
 
-No scrolling or layout shifts
+  * Progress bar fill animation
+  * Falling “code rain” effect
+* **Vertical text flow** is achieved using:
 
+  * `writing-mode: vertical-rl`
+  * `text-orientation: upright`
+* **Layering** is handled with `z-index`, allowing animated backgrounds without blocking user interaction.
+* **Glow effects** are created using `text-shadow` and `box-shadow`.
 
+---
 
-How It Works:
-
-CSS Keyframes drive all animations:
-
-Progress bar fill animation
-
-Falling “code rain” effect
-
-Vertical text flow is achieved using:
-
-writing-mode: vertical-rl
-
-text-orientation: upright
-
-Layering is handled with z-index, allowing animated backgrounds without blocking user interaction.
-
-Glow effects are created using text-shadow and box-shadow.
-
-
-
-Purpose:
+## Purpose
 
 This project was built as:
 
-A creative experiment with CSS animations
+* A creative experiment with CSS animations
+* A demonstration of visual design without JavaScript
+* A fun homage to *The Matrix* aesthetic
+* A portfolio-ready front-end micro-project
 
-A demonstration of visual design without JavaScript
+---
 
-A fun homage to The Matrix aesthetic
+## Possible Improvements
 
-A portfolio-ready front-end micro-project
+* Randomized characters or columns
+* JavaScript-driven procedural animation
+* Sound effects or timed page transitions
+* Mobile-specific optimizations
+* Dark/light theme variations
 
+---
 
-
-License:
+## License
 
 This project is open for learning, experimentation, and inspiration.
 Feel free to modify or build upon it.
+
